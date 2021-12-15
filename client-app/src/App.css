@@ -96,3 +96,11 @@ h1 {
   background-color:'green';
  border-radius:'8px';
 }
+
+.updateButtonStyle{
+  margin:'5px';
+  padding:'3px';
+  font-size:'25px';
+  background-color:'blue';
+ border-radius:'8px';
+}
