@@ -24,6 +24,7 @@ function Student({name, email, enrollment, mobile, marks, deleteHandler}/* props
             <h3>Enrollment Number: {enrollment}</h3>
             <h3>Mobile:{mobile}</h3>
             <h4>Marks:{marks}</h4><br/>
+            <input type="button" value ="Edit " onClick={()=>deleteHandler(enrollment)}/>
             <input type="button" value ="Delete " onClick={()=>deleteHandler(enrollment)}/>
             <br/>
 

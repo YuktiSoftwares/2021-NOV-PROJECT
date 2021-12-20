@@ -1,0 +1,38 @@
+{"students": [
+    {
+      "name": "Pragya",
+      "marks": "91",
+      "mobile": "+91 123452340",
+      "enrollment": "18ETCSB001",
+      "id": "18ETCSB001"
+    },
+    {
+        "name": "Shivji",
+        "marks": "92",
+        "mobile": "+91 123452340",
+        "enrollment": "18ETCSB002",
+        "id": "18ETCSB002"
+    },
+    {
+        "name": "Radhe",
+        "marks": "93",
+        "mobile": "+91 123452340",
+        "enrollment": "18ETCSB003",
+        "id": "18ETCSB003"
+    },
+    {
+        "name": "Intekhab",
+        "marks": "94",
+        "mobile": "+91 234567740",
+        "enrollment": "18ETCSB004",
+        "id": "18ETCSB004"
+    },
+    {
+        "name": "Sandhya",
+        "marks": "99",
+        "mobile": "+91 123567740",
+        "enrollment": "18ETCSB005",
+        "id": "18ETCSB005"
+    }
+  ]
+}

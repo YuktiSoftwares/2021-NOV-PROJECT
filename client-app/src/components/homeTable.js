@@ -1,36 +1,55 @@
 import React from "react";
 import Student from "./student";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 function HomeTable() {
-  var init_students = [
-    {
-      name: "Pragya",
-      marks: "91",
-      mobile: "+91 123452340",
-      enrollment: "18ETCSB001",
-    },
-    {
-      name: "Shivji",
-      marks: "92",
-      mobile: "+91 123452340",
-      enrollment: "18ETCSB002",
-    },
-    {
-      name: "Radhe",
-      marks: "93",
-      mobile: "+91 123452340",
-      enrollment: "18ETCSB003",
-    },
-    {
-      name: "Intekhab",
-      marks: "94",
-      mobile: "+91 234567740",
-      enrollment: "18ETCSB004",
-    },
-  ];
+
+  var init_students = [];
+  // var init_students = [
+  //   {
+  //     name: "Pragya",
+  //     marks: "91",
+  //     mobile: "+91 123452340",
+  //     enrollment: "18ETCSB001",
+  //   },
+  //   {
+  //     name: "Shivji",
+  //     marks: "92",
+  //     mobile: "+91 123452340",
+  //     enrollment: "18ETCSB002",
+  //   },
+  //   {
+  //     name: "Radhe",
+  //     marks: "93",
+  //     mobile: "+91 123452340",
+  //     enrollment: "18ETCSB003",
+  //   },
+  //   {
+  //     name: "Intekhab",
+  //     marks: "94",
+  //     mobile: "+91 234567740",
+  //     enrollment: "18ETCSB004",
+  //   },
+  // ];
+  //How to start json-server
+  //npx install json-server
+  // npx json-server --watch data/students.json --port 2000
+
 
   const [students, setStudents] = useState(init_students);
+
+  useEffect(()=>{
+    //console.log("Use Effect called");
+
+    fetch('http://localhost:2000/students')
+    .then((res)=>{
+      //console.log("response:"+res);
+      return res.json()})
+    .then(students=>{console.log(students)
+      setStudents(students);
+    
+    })
+  });
 
   // const renderStudent = (student) => {
   //   return (

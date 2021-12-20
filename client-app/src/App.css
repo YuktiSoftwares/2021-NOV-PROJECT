@@ -50,9 +50,9 @@ h1 {
   background-color: #61dafb;
 }
 .homeStyle {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* background-color: #cca0bf; */
-  height: 50%;
+  height: 650px;
   margin: 1%;
   /* overflow-y: scroll; */
 }
@@ -63,7 +63,7 @@ h1 {
   margin: 1%;
   width: 64%;
   overflow-y: scroll;
-  height: 50%;
+  height: 600px;
 }
 
 .homeFormStyle {
@@ -71,8 +71,8 @@ h1 {
   display:inline-block;
   margin: 1%;
   width: 30%;
-  height: 80%;
-  overflow-y: scroll;
+  height: 500px;
+  /* overflow-y: scroll; */
 }
 .footerStyle {
   border: 1px solid black;
@@ -82,25 +82,25 @@ h1 {
 
 
 .resetButtonStyle{
-  margin:'5px';
-  padding:'3px';
-  font-size:'25px';
-  background-color:'red';
- border-radius:'8px';
-}
-
-.submitButtonStyle{
-  margin:'5px';
-  padding:'3px';
-  font-size:'25px';
-  background-color:'green';
- border-radius:'8px';
+  margin:5px;
+  padding:3px;
+  font-size:25px;
+  background-color:#e0215a;
+ border-radius:8px;
 }
 
 .updateButtonStyle{
-  margin:'5px';
-  padding:'3px';
-  font-size:'25px';
-  background-color:'blue';
- border-radius:'8px';
+  margin:5px;
+  padding:3px;
+  font-size:25px;
+  background-color:#e9d66e;
+ border-radius:8px;
+}
+
+.submitButtonStyle{
+  margin:5px;
+  padding:3px;
+  font-size:25px;
+  background-color:#4ec758;
+ border-radius:8px;
 }
