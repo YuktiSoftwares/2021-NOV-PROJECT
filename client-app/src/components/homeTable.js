@@ -2,8 +2,9 @@ import React from "react";
 import Student from "./student";
 import {useState, useEffect} from "react";
 
-function HomeTable() {
+function HomeTable(props) {
 
+  const editStudentHandler=props.editStudentHandler;
   var init_students = [];
   // var init_students = [
   //   {
@@ -49,7 +50,7 @@ function HomeTable() {
       setStudents(students);
     
     })
-  });
+  },[]);
 
   // const renderStudent = (student) => {
   //   return (
@@ -82,6 +83,10 @@ function HomeTable() {
     setStudents(updatedStudents);
   };
 
+  const editHandler = (student)=>{
+    console.log("student1:"+student);
+    editStudentHandler(student);
+  }
   return (
     <div className="homeTableStyle">
       {students.map((student) => {
@@ -94,6 +99,7 @@ function HomeTable() {
             key={student.enrollment}
             enrollment={student.enrollment}
             deleteHandler={deleteHandler}
+            editHandler = {editHandler}
           />
         );
       })}
