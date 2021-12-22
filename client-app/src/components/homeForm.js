@@ -59,8 +59,14 @@ function HomeForm(props) {
       body:JSON.stringify(student)
     })
     .then((res)=>{
-      console.log("response:"+res);
-      //return res.json()
+      console.log("Data has been saved:"+res);
+     setStudent({
+      'name': '',
+      'enrollment': '',
+      'mobile': '',
+      'marks': '',
+      'email': '',
+    });
     });   
 
   };
@@ -82,9 +88,9 @@ function HomeForm(props) {
 
   return (
     <div className="homeFormStyle">
-      <div style={{ minHeight: "400px" }}>
-        <h1>
-          Name:{" "}
+      <h1>Student Details:</h1>
+      <div style={{ minHeight: "350px" }}>
+      <label>Name:</label> 
           <input
             type="text"
             id="studentName"
@@ -94,9 +100,7 @@ function HomeForm(props) {
               changeHandler(event);
             }}
           />
-        </h1>
-        <h1>
-          Email:{" "}
+        <label>Email:</label>
           <input
             type="text"
             id="studentEmail"
@@ -106,22 +110,18 @@ function HomeForm(props) {
               changeHandler(event);
             }}
           />
-        </h1>
-        <h1>
-          E. Number:{" "}
+          <label>Enrollment:</label>
           <input
             type="text"
             id="studentEnrollment"
             name="enrollment"
             
             value={student.enrollment}
-            // onChange={(event) => {
-            //   changeHandler(event);
-            // }}
+            onChange={(event) => {
+              changeHandler(event);
+            }}
           />
-        </h1>
-        <h1>
-          Mobile:
+        <label>Mobile:</label>
           <input
             type="text"
             id="studentMobile"
@@ -131,9 +131,7 @@ function HomeForm(props) {
               changeHandler(event);
             }}
           />
-        </h1>
-        <h1>
-          Marks:
+      <label>Marks:</label>
           <input
             type="text"
             id="studentMarks"
@@ -143,8 +141,8 @@ function HomeForm(props) {
               changeHandler(event);
             }}
           />
-        </h1>
       </div>
+      <br/><br/>
       <div style={{ minHeight: "50px", padding: "20px" }}>
         <input
           className="resetButtonStyle"
@@ -152,14 +150,15 @@ function HomeForm(props) {
           value="Reset"
           onClick={resetHandler}
         />
-        <input
+        
+        {/* <input
           className="updateButtonStyle"
           type="submit"
           value="Update"
           onClick={updateHandler}
-        />
+        /> */}
         {operation=='add' && <input className="submitButtonStyle" type="submit" value="Save"  onClick={saveHandler}/>}
-        {operation=='edit' && <input className="submitButtonStyle" type="submit" value="Edit"  onClick={editHandler}/>}
+        {operation=='edit' && <input className="submitButtonStyle" type="submit" value="Update"  onClick={editHandler}/>}
       </div>
     </div>
   );
