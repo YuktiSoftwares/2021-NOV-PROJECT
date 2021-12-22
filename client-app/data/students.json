@@ -1,38 +1,50 @@
-{"students": [
+{
+  "students": [
     {
       "name": "Pragya",
-      "marks": "91",
-      "mobile": "+91 123452340",
+      "email": "Pragya@gmail.com",
       "enrollment": "18ETCSB001",
+      "mobile": "+91 123452340",
+      "marks": "99",
       "id": "18ETCSB001"
     },
     {
-        "name": "Shivji",
-        "marks": "92",
-        "mobile": "+91 123452340",
-        "enrollment": "18ETCSB002",
-        "id": "18ETCSB002"
+      "name": "Shivji",
+      "email": "Shivji",
+      "enrollment": "18ETCSB002",
+      "mobile": "+91 123452340",
+      "marks": "91",
+      "id": "18ETCSB002"
     },
     {
-        "name": "Radhe",
-        "marks": "93",
-        "mobile": "+91 123452340",
-        "enrollment": "18ETCSB003",
-        "id": "18ETCSB003"
+      "name": "Radhe",
+      "email": "Radhe",
+      "enrollment": "18ETCSB003",
+      "mobile": "+91 123452340",
+      "marks": "99",
+      "id": "18ETCSB003"
     },
     {
-        "name": "Intekhab",
-        "marks": "94",
-        "mobile": "+91 234567740",
-        "enrollment": "18ETCSB004",
-        "id": "18ETCSB004"
+      "name": "Intekhab",
+      "email": "Intekhab",
+      "enrollment": "18ETCSB004",
+      "mobile": "+91 234567740",
+      "marks": "95",
+      "id": "18ETCSB004"
     },
     {
-        "name": "Sandhya",
-        "marks": "99",
-        "mobile": "+91 123567740",
-        "enrollment": "18ETCSB005",
-        "id": "18ETCSB005"
+      "name": "Sandhya",
+      "marks": "99",
+      "mobile": "+91 123567740",
+      "enrollment": "18ETCSB005",
+      "id": "18ETCSB005"
+    },
+    {
+      "name": "Pragya1",
+      "marks": "98",
+      "mobile": "+91 123452312",
+      "enrollment": "18ETCSB006",
+      "id": "18ETCSB006"
     }
   ]
 }

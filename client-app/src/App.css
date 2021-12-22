@@ -104,3 +104,37 @@ h1 {
   background-color:#4ec758;
  border-radius:8px;
 }
+
+/* form css */
+/* .homeFormStyle{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+} */
+.homeFormStyle label{ 
+  text-align: left;
+  display: block;
+}
+.homeFormStyle h2{ 
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.homeFormStyle input, .createQuery textarea, .createQuery select{ 
+  width: 100%;
+  padding: 6px 10px;
+  margin:10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.homeFormStyle button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding:8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
