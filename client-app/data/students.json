@@ -2,9 +2,9 @@
   "students": [
     {
       "name": "Pragya",
-      "email": "Pragya@gmail.com",
+      "email": "Pragya",
       "enrollment": "18ETCSB001",
-      "mobile": "+91 123452340",
+      "mobile": "+91 1234555222",
       "marks": "99",
       "id": "18ETCSB001"
     },
@@ -45,6 +45,22 @@
       "mobile": "+91 123452312",
       "enrollment": "18ETCSB006",
       "id": "18ETCSB006"
+    },
+    {
+      "name": "Pragya2",
+      "email": "Pragya2@gmail.com",
+      "enrollment": "18ETCSB007",
+      "mobile": "9686584998",
+      "marks": "99",
+      "id": "30K1Qic"
+    },
+    {
+      "name": "Mithilesh Kumar",
+      "email": "mithilesh@gmail.com",
+      "enrollment": "18ETCSB008",
+      "mobile": "9686584565",
+      "marks": "81",
+      "id": "dnuY6O4"
     }
   ]
 }

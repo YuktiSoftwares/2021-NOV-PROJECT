@@ -10,8 +10,8 @@ function Home() {
 
   const [edit, setEdit] = useState(false);
   var init_student = {
-    name: "abc",
-    email: "abc1",
+    name: "",
+    email: "",
     enrollment: "",
     mobile: "",
     marks: "",
