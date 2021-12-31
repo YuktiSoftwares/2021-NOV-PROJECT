@@ -6,3 +6,5 @@ marks number(5),
 mobile varchar(30),
 name varchar(40)
 );
+
+CREATE SEQUENCE HIBERNATE_SEQUENCE START WITH 6 INCREMENT BY 1;

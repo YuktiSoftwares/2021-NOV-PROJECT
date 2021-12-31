@@ -51,7 +51,7 @@ function HomeForm(props) {
   };
 
   const editHandler = () => {
-    console.log("Going to save student: " + student);
+    console.log("Going to edit student: " + student.stringify);
 
     fetch('http://localhost:2000/students/'+student.enrollment, {
       method:'PUT',
@@ -72,7 +72,7 @@ function HomeForm(props) {
   };
 
   const saveHandler = () => {
-    console.log("Going to save student: " + student);
+    console.log("===========Going to save student: " + student);
 
     fetch('http://localhost:2000/students', {
       method:'POST',
