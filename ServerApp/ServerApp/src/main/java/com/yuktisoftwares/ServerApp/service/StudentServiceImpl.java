@@ -16,6 +16,11 @@ public class StudentServiceImpl {
 
 	
 	
+	public Student saveStudent(Student student) {
+		Student savedStudent = studentRepository.save(student);
+		return savedStudent;
+	}
+	
 	public List<Student> getStudents(){
 		return studentRepository.findAll();
 		
@@ -28,6 +33,10 @@ public class StudentServiceImpl {
 		this.studentRepository = studentRepository;
 	}
 	
-	
+	/*Method returns student with given id*/
+	public Student getStudent(Integer id){
+		return studentRepository.findById(id).get();
+		
+	}
 
 }

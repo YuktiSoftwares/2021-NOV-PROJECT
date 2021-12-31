@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Student {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Integer id;
 	private String name;
 	private String enrollment;
@@ -22,13 +22,13 @@ public class Student {
 		super();
 	}
 
-	public Student(Integer id, String name, String enrollment, String email, String mobil, String marks) {
+	public Student(Integer id, String name, String enrollment, String email, String mobile, String marks) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.enrollment = enrollment;
 		this.email = email;
-		this.mobile = mobil;
+		this.mobile = mobile;
 		this.marks = marks;
 	}
 
@@ -64,11 +64,11 @@ public class Student {
 		this.email = email;
 	}
 
-	public String getMobil() {
+	public String getMobile() {
 		return mobile;
 	}
 
-	public void setMobil(String mobil) {
+	public void setMobile(String mobil) {
 		this.mobile = mobil;
 	}
 
