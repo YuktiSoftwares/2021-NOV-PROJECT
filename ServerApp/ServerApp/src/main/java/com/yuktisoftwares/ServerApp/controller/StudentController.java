@@ -40,14 +40,15 @@ public class StudentController {
 	
 	//To create a new student
 	@CrossOrigin(origins = "http://localhost:3000")
-	@PutMapping("/students/{id}")
+	@PutMapping("/students/{enrollment}")
 	public Student editStudent(@RequestBody Student student) {
 		//dont call save method. Try to edit a student.
-		return studentServiceImpl.saveStudent(student);	
+		return studentServiceImpl.editStudent(student);	
 		
 	}
 	
 	//localhost:2000/student/2
+	//To fetch a single student for given Id
 	@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping("/student/{id}")
 	public Student getStudent(@PathVariable("id") Integer id) {

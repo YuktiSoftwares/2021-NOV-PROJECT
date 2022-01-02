@@ -20,7 +20,7 @@ public class StudentServiceImpl {
 		Student savedStudent = studentRepository.save(student);
 		return savedStudent;
 	}
-	
+	//For fetching all students
 	public List<Student> getStudents(){
 		return studentRepository.findAll();
 		
@@ -37,6 +37,17 @@ public class StudentServiceImpl {
 	public Student getStudent(Integer id){
 		return studentRepository.findById(id).get();
 		
+	}
+	public Student editStudent(Student student) {		
+		Integer id = student.getId();
+		//Student updatedStudent = studentRepository.findById(id).get();
+		Student updatedStudent = studentRepository.findStudentByEnrollment(student.getEnrollment());
+		updatedStudent.setMobile(student.getMobile());
+		updatedStudent.setMarks(student.getMarks());
+		updatedStudent.setName(student.getName());
+		updatedStudent.setEmail(student.getEmail());
+		studentRepository.save(updatedStudent);
+		return updatedStudent;
 	}
 
 }

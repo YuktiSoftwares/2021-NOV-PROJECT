@@ -6,4 +6,6 @@ import com.yuktisoftwares.ServerApp.model.Student;
 
 public interface StudentRepository extends JpaRepository<Student, Integer> {
 
+	Student findStudentByEnrollment(String enrollment);
+
 }
