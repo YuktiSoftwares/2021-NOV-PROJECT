@@ -81,7 +81,14 @@ function HomeForm(props) {
     })
     .then((res)=>{
       console.log("response:"+res);
-      //return res.json()
+      console.log("Data has been saved:"+res);
+      setStudent({
+       'name': '',
+       'enrollment': '',
+       'mobile': '',
+       'marks': '',
+       'email': '',
+     });
     });   
 
   };
